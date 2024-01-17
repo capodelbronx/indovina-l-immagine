@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_corretto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/corretto">
+
+
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="109dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="452dp"
+        android:background="#00FFFFFF"
+        android:contextClickable="false"
+        android:onClick="onExitButtonClick"
+        android:text="@string/niente"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/continua_button"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="444dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contextClickable="false"
+        android:onClick="onContinuaButtonClick"
+        android:text="@string/niente"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.773"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

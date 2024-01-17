@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cambia_gioco"
+        android:title="@string/gioca_a_indovina_la_citta" />
+
+    <item
+        android:id="@+id/torna_al_menu"
+        android:title="@string/torna_al_menu" />
+
+</menu>

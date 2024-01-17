@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/errato">
+
+
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="131dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="448dp"
+        android:background="#00FFFFFF"
+        android:contextClickable="false"
+        android:onClick="onExitButtonClick"
+        android:text="@string/niente"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.204"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/continua_button"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="444dp"
+        android:background="#00FFFFFF"
+        android:contextClickable="false"
+        android:onClick="onContinuaButtonClick"
+        android:text="@string/niente"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.773"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/correct_answer"
+        android:layout_width="191dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="316dp"
+        android:fontFamily="monospace"
+        android:text="@string/ciao"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:gravity="center" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

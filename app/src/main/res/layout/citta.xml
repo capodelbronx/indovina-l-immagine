@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_principale"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/citta_background"
+    >
+
+    <FrameLayout
+        android:id="@+id/frame_menu"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/opzioni"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="340dp"
+            android:background="#00DC9B9B"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+            tools:ignore="ImageContrastCheck"
+            android:onClick="mostraMenuOpzioni"/>
+
+        <TextView
+            android:id="@+id/titolo"
+            android:layout_width="329dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/indovina_la_citta"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="29sp" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/divisore"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:background="#FDFCFC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_menu" />
+
+    <FrameLayout
+        android:id="@+id/frame_immagine"
+        android:layout_width="0dp"
+        android:layout_height="195dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divisore">
+
+        <ImageView
+            android:id="@+id/immagine_citta"
+            android:layout_width="340dp"
+            android:layout_height="227dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:importantForAccessibility="no"
+            app:srcCompat="@drawable/bandiera_vuota" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame_scelte"
+        android:layout_width="344dp"
+        android:layout_height="347dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_immagine">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_punteggio"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_scelte">
+
+        <TextView
+            android:id="@+id/contatore_corrette"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/risposte_corrette_0"
+            android:textColor="#065009"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/contatore_errate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/risposte_errate_0"
+            android:textColor="#980808"
+            android:textSize="20dp" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

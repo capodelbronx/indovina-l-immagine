@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">indovina l\'immagine</string>
+    <string name="risposte_errate_0">Risposte Errate: 0</string>
+    <string name="risposte_corrette_0">Risposte Corrette: 0</string>
+    <string name="indovina_la_bandiera">INDOVINA LA BANDIERA</string>
+    <string name="conferma">CONFERMA</string>
+    <string name="indovina_la_citta">INDOVINA LA CITTA\'</string>
+    <string name="benvenuto">BENVENUTO</string>
+    <string name="testo_indovina_la_bandiera">INDOVINA LA BANDIERA</string>
+    <string name="testo_indovina_la_citta">INDOVINA LA CITTA\'</string>
+    <string name="niente" />
+    <string name="gioca_a_indovina_la_citta">Gioca a indovina la città</string>
+    <string name="torna_al_menu">Torna al menu</string>
+    <string name="gioca_a_indovina_la_bandiera">Gioca a indovina la bandiera</string>
+    <string name="rules">RULES</string>
+    <string name="esci">esci</string>
+    <string name="continua">continua</string>
+    <string name="ciao">Ciao</string>
+
+
+</resources>

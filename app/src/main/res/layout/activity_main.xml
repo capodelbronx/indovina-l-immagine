@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/bandiere"
+        android:layout_width="0dp"
+        android:layout_height="282dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/bandiere_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/oval_button_background"
+            android:backgroundTint="#17FFFFFF"
+            android:contentDescription='@string/niente'
+            android:onClick="onBandieraButtonClick"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            app:srcCompat="@drawable/bandiera"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/benvenuto"
+        android:layout_width="0dp"
+        android:layout_height="111dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bandiere"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/testo_benvenuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginStart="30dp"
+            android:fontFamily="casual"
+            android:text="@string/benvenuto"
+            android:textSize="41sp" />
+
+        <ImageButton
+            android:id="@+id/rules"
+            android:layout_width="141dp"
+            android:layout_height="90dp"
+            android:layout_gravity="right"
+            android:background="#00FFFFFF"
+            android:onClick="onRulesButtonClick"
+            app:srcCompat="@drawable/rules"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/rules_textview"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="38dp"
+            android:fontFamily="monospace"
+            android:text="@string/rules" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/immagine_bandiera"
+        android:layout_width="0dp"
+        android:layout_height="336dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/benvenuto">
+
+        <ImageButton
+            android:id="@+id/citta_button"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/oval_button_background"
+            android:contentDescription="@string/niente"
+            android:onClick="onCittaButtonClick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/citta_menu"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+            tools:layout_marginTop="-40dp" />
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
