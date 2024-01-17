@@ -158,7 +158,7 @@ public class CittaActivity extends AppCompatActivity {
 
             ImageView immagineCitta = findViewById(R.id.immagine_citta);
 
-            // Imposta l'immagine nella ImageView
+            //imposta l'immagine nella ImageView
             immagineCitta.setImageBitmap(bitmap);
         } catch (IOException e) {
             e.printStackTrace();
@@ -166,17 +166,17 @@ public class CittaActivity extends AppCompatActivity {
     }
 
     private void aggiungiRadioButtons(String[] nomi, String cittaCorretta) {
-        // Rimuovi tutte le viste precedenti dal GridLayout
+        //rimuovi tutte le viste precedenti dal GridLayout
         frameLayout.removeAllViews();
 
-        // Crea un elenco di Button
+        //crea un elenco di Button
         ArrayList<Button> buttons = new ArrayList<>();
 
-        // Aggiungi 6 Button casuali
+        //aggiungi 6 Button casuali
         for (int i = 0; i < 6; i++) {
             String nome = nomi[i];
             Button button = new Button(this);
-            button.setId(View.generateViewId());  // Assegna un ID univoco al Button
+            button.setId(View.generateViewId());  //assegna un ID univoco al Button
             button.setText(nome);
             button.setTextSize(15);
             button.setTextColor(getResources().getColor(android.R.color.black)); // Imposta il colore del testo
