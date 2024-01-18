@@ -11,16 +11,17 @@
         android:id="@+id/exit_button"
         android:layout_width="147dp"
         android:layout_height="58dp"
-        android:layout_marginTop="444dp"
         android:background="#00FFFFFF"
         android:contextClickable="false"
         android:onClick="onExitButtonClick"
         android:text="@string/niente"
         android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintHorizontal_bias="0.185"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
         tools:visibility="visible" />
 
@@ -28,16 +29,17 @@
         android:id="@+id/continua_button"
         android:layout_width="131dp"
         android:layout_height="55dp"
-        android:layout_marginTop="448dp"
         android:background="#00FFFFFF"
         android:contextClickable="false"
         android:onClick="onContinuaButtonClick"
         android:text="@string/niente"
         android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.799"
+        app:layout_constraintHorizontal_bias="0.792"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656"
         tools:ignore="SpeakableTextPresentCheck"
         tools:visibility="visible" />
 
@@ -45,7 +47,6 @@
         android:id="@+id/correct_answer"
         android:layout_width="199dp"
         android:layout_height="39dp"
-        android:layout_marginBottom="320dp"
         android:fontFamily="monospace"
         android:text="@string/ciao"
         android:textSize="18sp"
@@ -53,6 +54,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557"
         tools:gravity="center" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
